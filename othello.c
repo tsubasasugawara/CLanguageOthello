@@ -173,7 +173,7 @@ int reverse(int Y, int X)
 }
 
 // 自動で駒を置く
-int AI()
+int computer()
 {
     int maxReversePiecesCount = 0; // 一番多く駒を返せた個数
     int maxX = 0;                  // 一番多く駒を返した場所のx座標
@@ -346,7 +346,7 @@ int main()
             passCount = passCount + 1;
             if (gamemode == 'C' && turn == 1)
             {
-                AI();
+                computer();
             }
             break;
 
@@ -362,7 +362,7 @@ int main()
                     passCount = 0;
                     if (gamemode == 'C' && turn == 1)
                     {
-                        AI();
+                        computer();
                     }
                 }
             }
